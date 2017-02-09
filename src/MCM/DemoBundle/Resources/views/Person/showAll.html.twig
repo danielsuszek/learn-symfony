@@ -1,0 +1,25 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <body class="bg-primary">
+    <header>
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Nagłówek</h1>
+            </div>
+        </div>
+    </header>
+        <div class="container bg-primary">
+        {% if persons is defined %}
+            <ul>
+            {% for p in persons %}
+                <li>Name: {{ p.name }} Age: {{ p.age }} Favorite team: {{ p.favFootballTeam }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+        </div>
+        </body>	
+</html>
+{% endblock %}
+
+

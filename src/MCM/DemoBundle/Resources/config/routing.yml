@@ -1,3 +1,15 @@
 mcm_demo_homepage:
     path:     /hello/{name}
     defaults: { _controller: MCMDemoBundle:Default:index }
+mcm_demo_create:
+    path:     /create
+    defaults: { _controller: MCMDemoBundle:Default:create }
+mcm_demo_show:
+    path:     /show/{id}
+    defaults: { _controller: MCMDemoBundle:Default:show }
+mcm_demo_showAll:
+    path:     /showAll
+    defaults: { _controller: MCMDemoBundle:Default:showAll }
+mcm_demo_test:
+    path:     /test/{id}
+    defaults: { _controller: MCMDemoBundle:Default:test }
